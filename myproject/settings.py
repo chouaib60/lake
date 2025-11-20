@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'rest_framework.authtoken',  # Pour l'authentification par token
     'lake',
 ]
 
@@ -87,6 +88,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+AUTH_USER_MODEL = 'lake.CustomUser'
+
 
 
 # Internationalization
@@ -138,10 +141,8 @@ REST_FRAMEWORK = {
 # ============================================
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",      # Frontend React
-    "http://localhost:8000",      # Django dev
+    "http://localhost:3000",      
     "http://127.0.0.1:3000",
-    "http://127.0.0.1:8000",
 ]
 
 CORS_ALLOW_CREDENTIALS = True

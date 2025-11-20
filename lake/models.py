@@ -1,12 +1,11 @@
-import self
 from django.db import models
-from django.contrib.auth import AbstractUser
+from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 
 class CustomUser(AbstractUser):
     bio = models.TextField(blank=True, null=True, max_length=500)
-    profile_picture = models.ImageField(upload_to="profiles/")
+    profile_picture = models.ImageField(upload_to="profiles/", blank=True, null=True)
     cover_photo = models.ImageField(upload_to='covers/', blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     following_count = models.IntegerField(default=0)
@@ -23,7 +22,7 @@ class Post(models.Model): # on crée une table appélé Post , models.model djan
 
     # dans le modèle Post,
     # je crée une ForeignKey author qui relie chaque post à un utilisateur CustomUser pour identifier l'auteur.
-    author = models.Foreign_key(CustomUser,on_delete=models.CASCADE, related_name='posts')
+    author = models.ForeignKey(CustomUser,on_delete=models.CASCADE, related_name='posts')
 
     caption = models.TextField(blank=True, max_length=2000)
     image = models.ImageField(upload_to='posts/')
@@ -54,7 +53,7 @@ class Follow(models.Model):
         unique_together = ['follower','following']
 
 
-     def __str__(self):
+    def __str__(self):
          return f"{self.follower.username} follows {self.following.username}"
 
 class Like(models.Model):
@@ -78,17 +77,6 @@ class Like(models.Model):
 
     def __str__(self):
         return f"{self.user.username} likes {self.post.id}"
-
-class Comment(models.Model):
-    author = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='comments')
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
-    text = models.TextField(max_length = 5000)
-    like_counts = models.IntegerField(default = 0)
-    created_at = models.DateTimeField(auto_now_add = True)
-    updated_at = models.DateTimeField(auto_now_add = True)
-
-    class Meta :
-        ordering = ['-created_at']
 
 
 class Comment(models.Model):

@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1027dc5-50f8-48f7-a082-751db549cdfb" name="Changes" comment="ajout du modèle CustomUser et Post">
+    <list default="true" id="c1027dc5-50f8-48f7-a082-751db549cdfb" name="Changes" comment="2 ème commit du modèle">
+      <change afterPath="$PROJECT_DIR$/lake/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lake/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/lake/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,8 +59,13 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
+    "settings.editor.selected.configurable": "configurable.group.tools",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -102,7 +116,10 @@
       <workItem from="1762701470707" duration="8342000" />
       <workItem from="1762777964535" duration="6261000" />
       <workItem from="1762950237538" duration="390000" />
-      <workItem from="1763376168267" duration="11385000" />
+      <workItem from="1763376168267" duration="11946000" />
+      <workItem from="1763398978376" duration="4048000" />
+      <workItem from="1763414152502" duration="1279000" />
+      <workItem from="1763558561658" duration="15231000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -120,7 +137,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762814410543</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ajout des modèles de comment like notification">
+      <option name="closed" value="true" />
+      <created>1763396022283</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763396022283</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2 ème commit du modèle">
+      <option name="closed" value="true" />
+      <created>1763400439899</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1763400439899</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +190,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="ajout du modèle CustomUser et Post" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout du modèle CustomUser et Post" />
+    <MESSAGE value="ajout des modèles de comment like notification" />
+    <MESSAGE value="2 ème commit du modèle" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 ème commit du modèle" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject1$manage.coverage" NAME="manage Coverage Results" MODIFIED="1762788571270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
